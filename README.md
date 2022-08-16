@@ -36,5 +36,5 @@ Area of Triangle :
 
 ##
 
-You can see Live project [here](https://mark14-profitorlosscalculator.netlify.app/)
+You can see Live project [here](https://playtriangles.netlify.app/)
  
