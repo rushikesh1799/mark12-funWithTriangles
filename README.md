@@ -1,4 +1,4 @@
-# mark12 funWithTriangles
+# mark12-funWithTriangles
 
 ---
 
