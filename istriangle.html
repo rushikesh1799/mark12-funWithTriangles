@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Triangle?</title>
+    <script src="scripts/istriangle.js" defer></script>
+    <link rel="stylesheet" href="css/istriangle.css"/>
+  </head>
+  <body>
+    <header>
+      <a href="istriangle.html"><h1>Fun with triangles</h1></a>
+      <nav>
+        <a href="istriangle.html">Is Triangle?</a>
+        <a href="index.html">Quiz</a>
+        <a href="hypotenuse.html">Hypotenuse</a>
+        <a href="areaofTriangle.html">Area of Triangle</a>
+      </nav>
+    </header>
+    <main class="istriangle">
+      <h1>Is Triangle?</h1>
+      <form id="calculate-area">
+        <label class="input-label" for="angle1">
+          <p>angle1</p>
+          <input required type="number" class="angle-input" />
+        </label>
+        <label class="input-label" for="angle2">
+          <p>angle2</p>
+          <input required type="number" class="angle-input" />
+        </label>
+        <label class="input-label" for="angle3">
+          <p>angle3</p>
+          <input required type="number" class="angle-input" />
+        </label>
+        <button class="check-btn" type="submit">Calculate</button>
+      </form>
+      <h3 id="output"></h3>
+    </main>
+  </body>
+</html>

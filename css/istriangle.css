@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: #f3dec9;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 1rem;
+    background-color: #00556a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header h1 {
+    text-align: initial;
+    color: #ff5200;
+}
+
+nav {
+    text-align: right;
+    color: #fff;
+}
+
+nav>a {
+    padding: 0 0.5rem;
+    color: #fff;
+}
+
+main {
+    margin: 0 0 7rem;
+}
+
+main h1 {
+    margin: 1rem;
+}
+
+.input-label {
+    font-size: larger;
+    color: #00556a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-label p {
+    font-size: larger;
+    margin: 0.5rem;
+}
+
+.angle-input {
+    font-size: 14px;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid #FFFFFF;
+    background-color: #00556a;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 458px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.check-btn {
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #00556a;
+    margin: 1rem auto;
+    display: block;
+}
+
+.check-btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 610px) {
+    html {
+        font-size: 55%;
+    }
+
+    nav {
+        text-align: center;
+        padding: 5px;
+        color: #fff;
+        font-size: 1.25rem;
+    }
+
+    header h1 {
+        text-align: center;
+        color: #ff5200;
+        font-size: 4rem;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .angle-input {
+        max-width: 258px;
+    }
+
+}
