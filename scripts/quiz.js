@@ -17,7 +17,7 @@ const correctAnswers = [
   "45°",
 ];
 
-console.log(submitAnswerBtn);
+// console.log(submitAnswerBtn);
 
 function calculateScore() {
   let score = 0;
