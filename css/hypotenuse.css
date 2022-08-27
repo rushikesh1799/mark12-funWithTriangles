@@ -3,7 +3,6 @@
 * {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -109,4 +108,53 @@ input::-webkit-inner-spin-button {
     align-items: center;
     justify-content: center;
     font-weight: 600;
+}
+
+.footer-text {
+    margin: 1rem;
+}
+
+.footer-text a {
+    text-decoration: none;
+    /* background-color: #00546c; */
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid #ff5200;
+    color: #00546c;
+}
+
+.footer-text a:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 610px) {
+    html {
+        font-size: 55%;
+    }
+
+    nav {
+        text-align: center;
+        padding: 5px;
+        color: #fff;
+        font-size: 1.25rem;
+    }
+
+    header h1 {
+        text-align: center;
+        color: #ff5200;
+        font-size: 4rem;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .angle-input {
+        max-width: 258px;
+    }
+
 }
