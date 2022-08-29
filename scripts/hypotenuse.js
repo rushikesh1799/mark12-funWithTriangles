@@ -18,9 +18,18 @@ function calculatehypotenuse(e) {
     const lengthOfHypotenuse = Math.sqrt(sumOfSquares)
     // console.log(lengthOfHypotenuse);
 
-    outputEl.innerText = `The length of Hypotenuse is: ${lengthOfHypotenuse}`
+    if (sides[0].value === "" || sides[1].value === "") {
+        outputEl.innerText = `Please enter both the required Base value(a) and Height value(b)`
+    }
+    else if (sides[0].value < 0 || sides[1].value < 0 || sides[0].value == 0 || sides[1].value == 0) {
+        outputEl.innerText = `Base value and Height value can not be zero or negative, Please give the values greater than or equal to 1`
+    } else {
+        outputEl.innerText = `The length of Hypotenuse is: ${lengthOfHypotenuse}`
+    }
+
     
-    console.log(sides[0].value); // logs first value
+    
+    // console.log(sides[0].value); // logs first value
 }
 
 hypotenuseBtn.addEventListener("click",calculatehypotenuse)
