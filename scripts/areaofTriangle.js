@@ -14,7 +14,13 @@ function calculateArea(e) {
   const secondSideValue = Number(secondSide.value);
   const thirdSideValue = Number(thirdSide.value);
 
-  if (
+  if (firstSide.value <= 0 || secondSide.value <= 0 || thirdSide.value <= 0) {
+    console.log(firstSide.value);
+    console.log(secondSide.value);
+    console.log(thirdSide.value);
+    output.innerText = `All the three sides of a triangle should be greater than or equal to 1`;
+  }
+  else if (
     firstSideValue + secondSideValue > thirdSideValue &&
     secondSideValue + thirdSideValue > firstSideValue &&
     firstSideValue + thirdSideValue > secondSideValue
@@ -31,7 +37,7 @@ function calculateArea(e) {
     console.log(result)
     output.innerText = `Area of a triangle using heron's formula is ${result} units`;
   } else {
-    output.innerText = "Enter valid side lengths such that each side lengths";
+    output.innerText = "Given input values does not form a Triangle";
   }
 }
 
