@@ -15,7 +15,7 @@ function calculatehypotenuse(e) {
     e.preventDefault()
     
     const sumOfSquares =  calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value));
-    const lengthOfHypotenuse = Math.sqrt(sumOfSquares)
+    const lengthOfHypotenuse = Math.sqrt(sumOfSquares).toFixed(2);
     // console.log(lengthOfHypotenuse);
 
     if (sides[0].value === "" || sides[1].value === "") {
